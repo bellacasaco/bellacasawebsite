@@ -308,6 +308,7 @@
             <div>
               <label for="name" class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-2">NAME</label>
               <input id="name" name="name" type="text" required class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="Jane Smith">
+              <p id="name-error" class="hidden mt-1.5 text-xs text-red-600">Please enter your name.</p>
             </div>
             <div class="grid sm:grid-cols-2 gap-5 mt-5">
               <div>
@@ -325,6 +326,7 @@
               <label for="suburb" class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-2">SUBURB</label>
               <input id="suburb" name="suburb" type="text" required autocomplete="off" class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="Northcote">
               <div id="suburb-suggestions" class="hidden absolute left-0 right-0 top-full z-20 mt-1 bg-card border border-ink/15 shadow-lg max-h-56 overflow-y-auto"></div>
+              <p id="suburb-error" class="hidden mt-1.5 text-xs text-red-600">Please enter your suburb.</p>
             </div>
             <div class="mt-5">
               <label for="contact-time" class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-2">PREFERRED CONTACT TIME (OPTIONAL)</label>
@@ -332,16 +334,21 @@
             </div>
             <div class="mt-6">
               <span class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-3">WHAT ARE YOU RENOVATING?</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div id="type-group" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <button type="button" class="quiz-choice focus-ring border border-ink/15 hover:border-gold p-4 text-left transition-colors" data-quiz-field="type" data-quiz-value="Bathroom">
                   <span class="block font-serif text-lg">Bathroom</span>
                   <span class="block text-xs text-ink/50 mt-1">A single bathroom or ensuite</span>
+                </button>
+                <button type="button" class="quiz-choice focus-ring border border-ink/15 hover:border-gold p-4 text-left transition-colors" data-quiz-field="type" data-quiz-value="Kitchen, Laundry or Other Room">
+                  <span class="block font-serif text-lg">Another Room</span>
+                  <span class="block text-xs text-ink/50 mt-1">Kitchen, laundry &amp; more</span>
                 </button>
                 <button type="button" class="quiz-choice focus-ring border border-ink/15 hover:border-gold p-4 text-left transition-colors" data-quiz-field="type" data-quiz-value="Not Sure Yet">
                   <span class="block font-serif text-lg">Not Sure Yet</span>
                   <span class="block text-xs text-ink/50 mt-1">Happy to talk it through</span>
                 </button>
               </div>
+              <p id="type-error" class="hidden mt-2 text-xs text-red-600">Please select an option.</p>
             </div>
             <button type="button" id="quiz-continue" class="focus-ring w-full sm:w-auto bg-ink text-cream px-8 py-4 text-sm tracking-wide hover:bg-gold hover:text-ink transition-colors duration-300 mt-6">
               Continue
@@ -355,7 +362,7 @@
 
             <div>
               <span class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-3">HOW SOON ARE YOU LOOKING TO GET STARTED?</span>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div id="timeline-group" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <button type="button" class="quiz-choice focus-ring border border-ink/15 hover:border-gold p-4 text-left transition-colors" data-quiz-field="timeline" data-quiz-value="Immediately">
                   <span class="block font-serif text-lg">Immediately</span>
                 </button>
@@ -367,11 +374,12 @@
                   <span class="block text-xs text-ink/50 mt-1">3+ months away</span>
                 </button>
               </div>
+              <p id="timeline-error" class="hidden mt-2 text-xs text-red-600">Please select an option.</p>
             </div>
 
             <div class="mt-6">
               <span class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-3">HAVE YOU SELECTED YOUR TILES &amp; FIXTURES?</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div id="fixtures-group" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button type="button" class="quiz-choice focus-ring border border-ink/15 hover:border-gold p-4 text-left transition-colors" data-quiz-field="fixtures" data-quiz-value="Yes, everything is ready">
                   <span class="block font-serif text-lg">Yes</span>
                   <span class="block text-xs text-ink/50 mt-1">Everything is ready</span>
@@ -381,6 +389,7 @@
                   <span class="block text-xs text-ink/50 mt-1">I need expert guidance</span>
                 </button>
               </div>
+              <p id="fixtures-error" class="hidden mt-2 text-xs text-red-600">Please select an option.</p>
             </div>
 
             <div class="relative mt-6">
@@ -604,6 +613,10 @@
         btn.classList.add('quiz-selected');
         const hiddenInput = document.getElementById('quiz-' + field);
         if (hiddenInput) hiddenInput.value = value;
+        const groupError = document.getElementById(field + '-error');
+        const group = document.getElementById(field + '-group');
+        if (groupError) groupError.classList.add('hidden');
+        if (group) group.classList.remove('ring-1', 'ring-red-500', 'rounded');
       });
     });
 
@@ -624,18 +637,20 @@
 
     function validatePhone() {
       const digits = phoneInput.value.replace(/\D/g, '');
-      const valid = digits === '' || AU_PHONE.test(digits);
+      const valid = digits !== '' && AU_PHONE.test(digits);
+      phoneError.textContent = digits === '' ? 'Please enter your phone number.' : 'Enter a valid Australian phone number.';
       phoneError.classList.toggle('hidden', valid);
       phoneInput.classList.toggle('border-red-500', !valid);
-      return valid && digits !== '';
+      return valid;
     }
 
     function validateEmail() {
       const value = emailInput.value.trim();
-      const valid = value === '' || EMAIL_RE.test(value);
+      const valid = value !== '' && EMAIL_RE.test(value);
+      emailError.textContent = value === '' ? 'Please enter your email address.' : 'Enter a valid email address.';
       emailError.classList.toggle('hidden', valid);
       emailInput.classList.toggle('border-red-500', !valid);
-      return valid && value !== '';
+      return valid;
     }
 
     if (phoneInput) {
@@ -652,15 +667,62 @@
     }
 
     const nameInput = document.getElementById('name');
+    const nameError = document.getElementById('name-error');
+    const suburbInputEl = document.getElementById('suburb');
+    const suburbError = document.getElementById('suburb-error');
+
+    function validateName() {
+      const valid = nameInput.value.trim() !== '';
+      nameError.classList.toggle('hidden', valid);
+      nameInput.classList.toggle('border-red-500', !valid);
+      return valid;
+    }
+
+    function validateSuburb() {
+      const valid = suburbInputEl.value.trim() !== '';
+      suburbError.classList.toggle('hidden', valid);
+      suburbInputEl.classList.toggle('border-red-500', !valid);
+      return valid;
+    }
+
+    function validateGroup(field) {
+      const hiddenInput = document.getElementById('quiz-' + field);
+      const errorEl = document.getElementById(field + '-error');
+      const groupEl = document.getElementById(field + '-group');
+      const valid = !!(hiddenInput && hiddenInput.value !== '');
+      if (errorEl) errorEl.classList.toggle('hidden', valid);
+      if (groupEl) groupEl.classList.toggle('ring-1', !valid);
+      if (groupEl) groupEl.classList.toggle('ring-red-500', !valid);
+      if (groupEl) groupEl.classList.toggle('rounded', !valid);
+      return valid;
+    }
+
+    if (nameInput) {
+      nameInput.addEventListener('blur', validateName);
+      nameInput.addEventListener('input', () => {
+        if (!nameError.classList.contains('hidden')) validateName();
+      });
+    }
+    if (suburbInputEl) {
+      suburbInputEl.addEventListener('blur', validateSuburb);
+      suburbInputEl.addEventListener('input', () => {
+        if (!suburbError.classList.contains('hidden')) validateSuburb();
+      });
+    }
+
     const continueBtn = document.getElementById('quiz-continue');
     if (continueBtn) {
       continueBtn.addEventListener('click', () => {
-        const nameOk = nameInput.value.trim() !== '';
+        const nameOk = validateName();
         const phoneOk = validatePhone();
         const emailOk = validateEmail();
+        const suburbOk = validateSuburb();
+        const typeOk = validateGroup('type');
         if (!nameOk) { nameInput.focus(); return; }
         if (!phoneOk) { phoneInput.focus(); return; }
         if (!emailOk) { emailInput.focus(); return; }
+        if (!suburbOk) { suburbInputEl.focus(); return; }
+        if (!typeOk) { document.getElementById('type-group').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
         if (window.goToQuizStep) window.goToQuizStep(2);
       });
     }
@@ -670,10 +732,14 @@
       quizForm.addEventListener('submit', (e) => {
         const phoneOk = validatePhone();
         const emailOk = validateEmail();
-        if (!phoneOk || !emailOk) {
+        const timelineOk = validateGroup('timeline');
+        const fixturesOk = validateGroup('fixtures');
+        if (!phoneOk || !emailOk || !timelineOk || !fixturesOk) {
           e.preventDefault();
-          const firstInvalid = !phoneOk ? phoneInput : emailInput;
-          firstInvalid.focus();
+          if (!phoneOk) { phoneInput.focus(); return; }
+          if (!emailOk) { emailInput.focus(); return; }
+          if (!timelineOk) { document.getElementById('timeline-group').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+          if (!fixturesOk) { document.getElementById('fixtures-group').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
           return;
         }
 

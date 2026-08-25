@@ -295,10 +295,11 @@
           <div id="quiz-progress-bar" class="h-1 bg-gold transition-[width] duration-300" style="width:50%"></div>
         </div>
 
-        <form id="quiz-form" class="space-y-5" action="https://formsubmit.co/info@bellacasaco.com.au" method="POST">
+        <form id="quiz-form" class="space-y-5" action="https://formsubmit.co/info@bellacasaco.com.au" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="New consultation request from Bella Casa Co. website">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.bellacasaco.com.au/thank-you.html">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <input type="hidden" id="quiz-type" name="renovation_type">
           <input type="hidden" id="quiz-timeline" name="timeline">
@@ -402,14 +403,8 @@
             <button type="submit" id="quiz-submit-btn" class="focus-ring w-full sm:w-auto bg-ink text-cream px-8 py-4 text-sm tracking-wide hover:bg-gold hover:text-ink transition-colors duration-300 mt-6">
               Request Consultation
             </button>
-            <p id="quiz-submit-error" class="hidden mt-3 text-sm text-red-600">Something went wrong sending your request. Please call us on 0451 671 500 or try again.</p>
           </div>
         </form>
-        <div id="quiz-success" class="hidden text-center py-12" data-reveal>
-          <span class="inline-flex items-center justify-center w-16 h-16 rounded-full border border-gold text-golddeep text-2xl mb-6">&#10003;</span>
-          <h3 class="font-serif text-3xl mb-3">Thanks, that's in.</h3>
-          <p class="text-ink/70 leading-relaxed max-w-md mx-auto">We've received your details and will be in touch to arrange your consultation and fixed-price quote.</p>
-        </div>
       </div>
 
     </div>
@@ -674,39 +669,18 @@
     const quizForm = document.getElementById('quiz-form');
     if (quizForm) {
       quizForm.addEventListener('submit', (e) => {
-        e.preventDefault();
         const phoneOk = validatePhone();
         const emailOk = validateEmail();
         if (!phoneOk || !emailOk) {
+          e.preventDefault();
           const firstInvalid = !phoneOk ? phoneInput : emailInput;
           firstInvalid.focus();
           return;
         }
 
         const submitBtn = document.getElementById('quiz-submit-btn');
-        const submitError = document.getElementById('quiz-submit-error');
-        submitError.classList.add('hidden');
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
-
-        fetch('https://formsubmit.co/ajax/info@bellacasaco.com.au', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(quizForm)
-        })
-        .then(res => { if (!res.ok) throw new Error('Request failed'); return res.json(); })
-        .then(() => {
-          quizForm.classList.add('hidden');
-          document.getElementById('quiz-success').classList.remove('hidden');
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', { event_category: 'contact_form', event_label: 'consultation_request' });
-          }
-        })
-        .catch(() => {
-          submitError.classList.remove('hidden');
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Request Consultation';
-        });
       });
     }
   })();

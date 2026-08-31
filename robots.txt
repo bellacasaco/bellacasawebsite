@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bellacasaco.com.au/sitemap.xml
+Sitemap: https://bellacasaco.com.au/sitemap.xml

@@ -1,6 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Bella Casa Co.</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1A1A1A">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/fraunces-normal-300-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-normal-300-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Self-hosted fonts (SIL Open Font Licence). Latin subset only. */
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:300 500;font-display:swap;src:url(/assets/fonts/fraunces-italic-300-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:300 600;font-display:swap;src:url(/assets/fonts/fraunces-normal-300-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-normal-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-normal-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';font-style:normal;font-weight:300 600;font-display:swap;src:url(/assets/fonts/inter-normal-300-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+</style>
+<noscript><style>[data-reveal],.split-word{opacity:1!important;transform:none!important}#page-curtain{display:none!important}</style></noscript>
+<style>
+  .focus-ring:focus-visible { outline: 2px solid #B89768; outline-offset: 3px; }
+  /* feature wall: the one dark, softly lit surface on a page */
+  .feature-wall {
+    background-color: #1C130C;
+    background-image:
+      radial-gradient(70% 90% at 50% 34%, rgba(96,62,30,0.70) 0%, rgba(96,62,30,0.30) 44%, rgba(96,62,30,0) 78%),
+      radial-gradient(38% 46% at 50% 38%, rgba(227,170,94,0.14), rgba(227,170,94,0) 72%);
+  }
+  .feature-wall.glow-right {
+    background-image:
+      radial-gradient(62% 88% at 78% 42%, rgba(96,62,30,0.90) 0%, rgba(96,62,30,0.45) 38%, rgba(96,62,30,0) 74%),
+      radial-gradient(40% 52% at 78% 44%, rgba(227,170,94,0.30), rgba(227,170,94,0) 72%);
+  }
+  .feature-wall.glow-left {
+    background-image:
+      radial-gradient(62% 88% at 22% 42%, rgba(96,62,30,0.90) 0%, rgba(96,62,30,0.45) 38%, rgba(96,62,30,0) 74%),
+      radial-gradient(40% 52% at 22% 44%, rgba(227,170,94,0.30), rgba(227,170,94,0) 72%);
+  }
+  .feature-wall.grid-paper {
+    background-image:
+      linear-gradient(rgba(227,170,94,0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(227,170,94,0.12) 1px, transparent 1px),
+      radial-gradient(70% 90% at 50% 34%, rgba(96,62,30,0.55) 0%, rgba(96,62,30,0.24) 44%, rgba(96,62,30,0) 78%);
+    background-size: 28px 28px, 28px 28px, auto;
+  }
+  @media (max-width: 1023px) {
+    .feature-wall.glow-right, .feature-wall.glow-left {
+      background-image:
+        radial-gradient(120% 40% at 50% 72%, rgba(96,62,30,0.80) 0%, rgba(96,62,30,0.38) 46%, rgba(96,62,30,0) 80%),
+        radial-gradient(80% 24% at 50% 74%, rgba(227,170,94,0.24), rgba(227,170,94,0) 72%);
+    }
+  }
+  .eyebrow { display: inline-flex; align-items: center; gap: 14px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 10.5px; letter-spacing: 0.2em; }
+  .eyebrow::before { content: ''; width: 32px; height: 1px; background: currentColor; flex: none; }  </style>
+<link rel="stylesheet" href="/assets/css/site.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZR957Q6NK"></script>
 <script>
@@ -10,78 +66,87 @@
   gtag('config', 'G-NZR957Q6NK');
   gtag('event', 'generate_lead', { event_category: 'contact_form', event_label: 'consultation_request' });
 </script>
-<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1425432656378830');
-fbq('track', 'PageView');
-fbq('track', 'Lead');
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null; if (!a || typeof gtag !== 'function') return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('tel:') === 0) gtag('event', 'click_to_call', { event_category: 'contact', event_label: h.slice(4) });
+    else if (h.indexOf('mailto:') === 0) gtag('event', 'click_email', { event_category: 'contact' });
+    else if (/share\.google|google\.com\/(maps|search)/.test(h)) gtag('event', 'click_google_profile', { event_category: 'reviews' });
+  }, true);
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1425432656378830&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You | Bella Casa Co.</title>
-<meta name="robots" content="noindex, follow">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231A1A1A'/%3E%3Cpath d='M14 34 L32 18 L50 34' fill='none' stroke='%23B89768' stroke-width='2.5'/%3E%3Crect x='18' y='34' width='28' height='20' fill='none' stroke='%23B89768' stroke-width='2.5'/%3E%3Cline x1='24' y1='54' x2='24' y2='42' stroke='%23B89768' stroke-width='2'/%3E%3Cline x1='40' y1='54' x2='40' y2='42' stroke='%23B89768' stroke-width='2'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          cream: '#F4F0EA', card: '#FBFAF7', ink: '#1A1A1A', charcoal: '#2C2C2C', gold: '#B89768', golddeep: '#8C7355',
-        },
-        fontFamily: {
-          serif: ['Fraunces', 'serif'], sans: ['Inter', 'sans-serif'], mono: ['IBM Plex Mono', 'monospace'],
-        },
-      },
-    },
-  };
-</script>
-<style>
-  .focus-ring:focus-visible { outline: 2px solid #B89768; outline-offset: 3px; }
-</style>
 </head>
 <body class="bg-cream text-ink font-sans antialiased min-h-screen flex flex-col">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[300] focus:bg-ink focus:text-cream focus:px-4 focus:py-2 focus:text-sm">Skip to main content</a>
+
 
 <header class="border-b border-ink/10">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between py-3">
-    <a href="index.html" class="focus-ring inline-block leading-none">
-      <img src="Transparent Logo.png" alt="Bella Casa Co. logo" class="h-24 md:h-28 w-auto">
+    <a href="/" class="focus-ring inline-block leading-none">
+      <img src="/assets/img/bella-casa-co-logo-420.webp" alt="Bella Casa Co. logo" class="h-24 md:h-28 w-auto" srcset="/assets/img/bella-casa-co-logo-420.webp 420w, /assets/img/bella-casa-co-logo-760.webp 760w" sizes="(min-width: 768px) 191px, 164px" width="760" height="447" decoding="async">
     </a>
-    <a href="index.html" class="focus-ring text-sm tracking-wide hover:text-golddeep transition-colors">Back to Home</a>
+    <a href="/" class="focus-ring text-sm tracking-wide hover:text-golddeep transition-colors">Back to Home</a>
   </div>
 </header>
 
-<main class="flex-1 flex items-center">
+<main id="main" class="feature-wall text-parchment flex-1 flex items-center">
   <div class="max-w-xl mx-auto px-6 lg:px-10 py-24 text-center">
-    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full border border-gold text-golddeep text-2xl mb-6">&#10003;</span>
-    <h1 class="font-serif text-4xl sm:text-5xl leading-tight mb-4">Thanks, that's in.</h1>
-    <p class="text-lg leading-relaxed text-ink/70 max-w-md mx-auto">We've received your details and will be in touch to arrange your consultation and fixed-price quote.</p>
+    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brass text-brass text-2xl mb-6">&#10003;</span>
+    <h1 class="font-serif font-light text-4xl sm:text-5xl leading-tight mb-4">Thanks, that's <span class="italic text-brass">in.</span></h1>
+    <p class="text-lg leading-relaxed text-parchment/70 max-w-md mx-auto">We've received your details and will be in touch to arrange your consultation and fixed-price quote.</p>
     <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
-      <a href="index.html" class="focus-ring inline-block bg-ink text-cream px-8 py-4 text-sm tracking-wide hover:bg-gold hover:text-ink transition-colors duration-300">Back to Home</a>
-      <a href="portfolio.html" class="focus-ring inline-block text-sm tracking-wide border-b border-ink/40 pb-1 hover:border-gold hover:text-golddeep transition-colors">View Our Work</a>
+      <a href="/" class="focus-ring inline-block bg-brass text-espresso px-8 py-4 text-sm tracking-wide hover:bg-parchment transition-colors duration-300">Back to Home</a>
+      <a href="/portfolio.html" class="focus-ring inline-block text-sm tracking-wide border-b border-parchment/40 pb-1 hover:border-brass hover:text-brass transition-colors">View Our Work</a>
     </div>
   </div>
 </main>
 
-<footer class="bg-ink text-cream/60 py-10 border-t border-cream/10">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p class="font-mono text-[10px] tracking-[0.1em] text-cream/40">&copy; 2026 BELLA CASA CO. ALL RIGHTS RESERVED.</p>
-    <a href="index.html" class="focus-ring font-mono text-[10px] tracking-[0.1em] text-cream/40 hover:text-gold transition-colors">BELLACASACO.COM.AU</a>
+<footer class="bg-ink text-cream/60 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-cream/10">
+      <div class="lg:col-span-2">
+        <a href="/" class="focus-ring inline-block">
+          <img src="/assets/img/bella-casa-co-logo-420.webp" alt="Bella Casa Co. logo" class="h-[13.75rem] w-auto" srcset="/assets/img/bella-casa-co-logo-420.webp 420w, /assets/img/bella-casa-co-logo-760.webp 760w" sizes="374px" width="760" height="447" loading="lazy" decoding="async">
+        </a>
+        <p class="mt-5 max-w-sm text-sm leading-relaxed">Luxury bathroom and residential renovations for homeowners across Melbourne, built on premium craftsmanship and a fixed, dependable timeline.</p>
+        <div class="mt-5 space-y-1 text-sm">
+          <a href="tel:+61451671500" class="focus-ring block hover:text-gold transition-colors">0451 671 500</a>
+          <a href="mailto:info@bellacasaco.com.au" class="focus-ring block hover:text-gold transition-colors">info@bellacasaco.com.au</a>
+          <a href="https://www.instagram.com/bellacasa.melb" target="_blank" rel="noopener" class="focus-ring block hover:text-gold transition-colors">bellacasa.melb</a>
+        </div>
+      </div>
+      <div>
+        <span class="block font-mono text-[10px] tracking-[0.2em] text-cream/40 mb-4">SITEMAP</span>
+        <nav class="flex flex-col gap-3 text-sm">
+          <a href="/" class="focus-ring hover:text-gold transition-colors">Home</a>
+          <a href="/services.html" class="focus-ring hover:text-gold transition-colors">Services</a>
+          <a href="/guides.html" class="focus-ring hover:text-gold transition-colors">Guides</a>
+          <a href="/bathroom-renovation-cost-melbourne.html" class="focus-ring hover:text-gold transition-colors">Cost Guide</a>
+          <a href="/bathroom-renovation-process-melbourne.html" class="focus-ring hover:text-gold transition-colors">Renovation Process</a>
+          <a href="/bathroom-renovation-ideas-melbourne.html" class="focus-ring hover:text-gold transition-colors">Bathroom Ideas</a>
+          <a href="/luxury-bathroom-renovation-guide-melbourne.html" class="focus-ring hover:text-gold transition-colors">Luxury Bathroom Guide</a>
+          <a href="/ensuite-renovations-melbourne.html" class="focus-ring hover:text-gold transition-colors">Ensuite Renovations</a>
+          <a href="/service-areas.html" class="focus-ring hover:text-gold transition-colors">Service Areas</a>
+          <a href="/why-us.html" class="focus-ring hover:text-gold transition-colors">Why Us</a>
+          <a href="/portfolio.html" class="focus-ring hover:text-gold transition-colors">Portfolio</a>
+          <a href="/reviews.html" class="focus-ring hover:text-gold transition-colors">Reviews</a>
+          <a href="/contact.html" class="focus-ring hover:text-gold transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <span class="block font-mono text-[10px] tracking-[0.2em] text-cream/40 mb-4">CONNECT</span>
+        <nav class="flex flex-col gap-3 text-sm">
+          <a href="https://www.instagram.com/bellacasa.melb" target="_blank" rel="noopener" class="focus-ring hover:text-gold transition-colors">Instagram</a>
+          <a href="https://www.facebook.com/share/187q7x1HaX/" target="_blank" rel="noopener" class="focus-ring hover:text-gold transition-colors">Facebook</a>
+          <a href="https://www.tiktok.com/@bellacasa.melb" target="_blank" rel="noopener" class="focus-ring hover:text-gold transition-colors">TikTok</a>
+        </nav>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="font-mono text-[10px] tracking-[0.1em] text-cream/40">&copy; 2026 BELLA CASA CO. ALL RIGHTS RESERVED.</p>
+      <a href="/privacy.html" class="focus-ring font-mono text-[10px] tracking-[0.1em] text-cream/40 hover:text-gold transition-colors">PRIVACY POLICY</a>
+      <p class="font-mono text-[10px] tracking-[0.1em] text-cream/40">LUXURY RESIDENTIAL RENOVATIONS &middot; MELBOURNE</p>
+    </div>
   </div>
 </footer>
 

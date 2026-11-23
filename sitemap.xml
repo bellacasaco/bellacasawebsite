@@ -1,33 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bellacasaco.com.au/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/luxury-bathroom-renovation-melbourne-double-vanity-backlit-mirrors-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/luxury-bathroom-renovation-melbourne-brushed-gold-fittings-marble-look-tile-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bellacasaco.com.au/services.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/bathroom-renovation-melbourne-arched-glass-shower-fluted-timber-vanity-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/bathroom-renovation-melbourne-twin-rain-showers-grey-stone-look-tile-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/guides.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/luxury-bathroom-renovation-melbourne-brushed-gold-fittings-marble-look-tile-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovation-cost-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovation-process-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovation-ideas-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/luxury-bathroom-renovation-melbourne-brushed-gold-fittings-marble-look-tile-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/luxury-bathroom-renovation-melbourne-double-vanity-backlit-mirrors-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/bathroom-renovation-melbourne-twin-rain-showers-grey-stone-look-tile-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/bathroom-renovation-melbourne-arched-glass-shower-fluted-timber-vanity-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/luxury-bathroom-renovation-guide-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/ensuite-renovations-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/service-areas.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovations-northern-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovations-eastern-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovations-southern-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/bathroom-renovations-western-melbourne.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bellacasaco.com.au/why-us.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/bathroom-renovation-melbourne-twin-rain-shower-backlit-marble-look-tile-1080.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bellacasaco.com.au/portfolio.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/reviews.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/black-timber-family-bathroom-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/garden-bath-main-bathroom-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/wet-room-ensuite-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/arched-window-main-bathroom-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/pine-to-pale-ensuite-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/gold-marble-ensuite-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gold-marble-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/pine-to-pale-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/wet-room-ensuite-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bellacasaco.com.au/projects/gun-metal-frames-family-bathroom-renovation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-before-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/gun-metal-frames-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/black-timber-family-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/garden-bath-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
+    <image:image><image:loc>https://bellacasaco.com.au/assets/img/arched-window-main-bathroom-renovation-after-1080.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bellacasaco.com.au/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://bellacasaco.com.au/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-22</lastmod>
   </url>
 </urlset>

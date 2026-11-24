@@ -272,18 +272,18 @@
           <div class="quiz-step" data-quiz-step="1">
             <div>
               <label for="name" class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-2">NAME</label>
-              <input id="name" name="name" type="text" required class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="Jane Smith">
+              <input id="name" name="name" type="text" required autocomplete="name" class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="Jane Smith">
               <p id="name-error" class="hidden mt-1.5 text-xs text-red-600">Please enter your name.</p>
             </div>
             <div class="grid sm:grid-cols-2 gap-5 mt-5">
               <div>
                 <label for="phone" class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-2">PHONE</label>
-                <input id="phone" name="phone" type="tel" required class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="04XX XXX XXX">
+                <input id="phone" name="phone" type="tel" required autocomplete="tel" class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="04XX XXX XXX">
                 <p id="phone-error" class="hidden mt-1.5 text-xs text-red-600">Enter a valid Australian phone number.</p>
               </div>
               <div>
                 <label for="email" class="block font-mono text-[10px] tracking-[0.15em] text-ink/50 mb-2">EMAIL</label>
-                <input id="email" name="email" type="email" required class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="jane@email.com">
+                <input id="email" name="email" type="email" required autocomplete="email" class="focus-ring w-full bg-transparent border-b border-ink/30 py-3 text-ink placeholder:text-ink/30 focus:border-gold outline-none transition-colors" placeholder="jane@email.com">
                 <p id="email-error" class="hidden mt-1.5 text-xs text-red-600">Enter a valid email address.</p>
               </div>
             </div>
